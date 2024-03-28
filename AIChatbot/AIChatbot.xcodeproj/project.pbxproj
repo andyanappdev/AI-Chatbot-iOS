@@ -13,6 +13,7 @@
 		7FBE6CEB2BB50CF200485377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FBE6CEA2BB50CF200485377 /* Assets.xcassets */; };
 		7FBE6CEE2BB50CF200485377 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FBE6CEC2BB50CF200485377 /* LaunchScreen.storyboard */; };
 		7FBE6CFB2BB530D300485377 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE6CFA2BB530D300485377 /* Message.swift */; };
+		7FBE6CFE2BB5329300485377 /* ChatRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE6CFD2BB5329300485377 /* ChatRepositoryProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		7FBE6CEF2BB50CF200485377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FBE6CF52BB511BF00485377 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		7FBE6CFA2BB530D300485377 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		7FBE6CFD2BB5329300485377 /* ChatRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRepositoryProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				7FBE6CF92BB5305E00485377 /* Model */,
+				7FBE6CFC2BB5325D00485377 /* Repository */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -99,6 +102,14 @@
 				7FBE6CFA2BB530D300485377 /* Message.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7FBE6CFC2BB5325D00485377 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				7FBE6CFD2BB5329300485377 /* ChatRepositoryProtocol.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FBE6CFE2BB5329300485377 /* ChatRepositoryProtocol.swift in Sources */,
 				7FBE6CE62BB50CEE00485377 /* ViewController.swift in Sources */,
 				7FBE6CFB2BB530D300485377 /* Message.swift in Sources */,
 				7FBE6CE22BB50CEE00485377 /* AppDelegate.swift in Sources */,
