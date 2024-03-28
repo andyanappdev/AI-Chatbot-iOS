@@ -12,6 +12,7 @@
 		7FBE6CE62BB50CEE00485377 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE6CE52BB50CEE00485377 /* ViewController.swift */; };
 		7FBE6CEB2BB50CF200485377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FBE6CEA2BB50CF200485377 /* Assets.xcassets */; };
 		7FBE6CEE2BB50CF200485377 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FBE6CEC2BB50CF200485377 /* LaunchScreen.storyboard */; };
+		7FBE6CFB2BB530D300485377 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE6CFA2BB530D300485377 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		7FBE6CED2BB50CF200485377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FBE6CEF2BB50CF200485377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FBE6CF52BB511BF00485377 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		7FBE6CFA2BB530D300485377 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,15 +57,48 @@
 		7FBE6CE02BB50CEE00485377 /* AIChatbot */ = {
 			isa = PBXGroup;
 			children = (
-				7FBE6CE12BB50CEE00485377 /* AppDelegate.swift */,
-				7FBE6CE32BB50CEE00485377 /* SceneDelegate.swift */,
+				7FBE6CF62BB52FD500485377 /* App */,
+				7FBE6CF82BB5305400485377 /* Domain */,
 				7FBE6CE52BB50CEE00485377 /* ViewController.swift */,
-				7FBE6CEA2BB50CF200485377 /* Assets.xcassets */,
-				7FBE6CEC2BB50CF200485377 /* LaunchScreen.storyboard */,
 				7FBE6CEF2BB50CF200485377 /* Info.plist */,
 				7FBE6CF52BB511BF00485377 /* Secrets.xcconfig */,
 			);
 			path = AIChatbot;
+			sourceTree = "<group>";
+		};
+		7FBE6CF62BB52FD500485377 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7FBE6CF72BB52FF700485377 /* AppDelegate */,
+				7FBE6CEA2BB50CF200485377 /* Assets.xcassets */,
+				7FBE6CEC2BB50CF200485377 /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7FBE6CF72BB52FF700485377 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				7FBE6CE12BB50CEE00485377 /* AppDelegate.swift */,
+				7FBE6CE32BB50CEE00485377 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		7FBE6CF82BB5305400485377 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				7FBE6CF92BB5305E00485377 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		7FBE6CF92BB5305E00485377 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7FBE6CFA2BB530D300485377 /* Message.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FBE6CE62BB50CEE00485377 /* ViewController.swift in Sources */,
+				7FBE6CFB2BB530D300485377 /* Message.swift in Sources */,
 				7FBE6CE22BB50CEE00485377 /* AppDelegate.swift in Sources */,
 				7FBE6CE42BB50CEE00485377 /* SceneDelegate.swift in Sources */,
 			);
