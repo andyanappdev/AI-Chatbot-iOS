@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F904F4F2BB5B71500AFB7E4 /* JSONDecoable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F904F4E2BB5B71500AFB7E4 /* JSONDecoable.swift */; };
-		7F904F512BB5C47B00AFB7E4 /* JSONEncodProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F904F502BB5C47B00AFB7E4 /* JSONEncodProtocol.swift */; };
+		7F904F4F2BB5B71500AFB7E4 /* NetworkSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F904F4E2BB5B71500AFB7E4 /* NetworkSerializable.swift */; };
+		7F904F512BB5C47B00AFB7E4 /* NetworkDeserializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F904F502BB5C47B00AFB7E4 /* NetworkDeserializable.swift */; };
 		7F904F532BB5C79600AFB7E4 /* RequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F904F522BB5C79600AFB7E4 /* RequestBody.swift */; };
 		7F904F562BB5CFD500AFB7E4 /* MessageMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F904F552BB5CFD500AFB7E4 /* MessageMapper.swift */; };
 		7FBE6CE22BB50CEE00485377 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE6CE12BB50CEE00485377 /* AppDelegate.swift */; };
@@ -22,8 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7F904F4E2BB5B71500AFB7E4 /* JSONDecoable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoable.swift; sourceTree = "<group>"; };
-		7F904F502BB5C47B00AFB7E4 /* JSONEncodProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONEncodProtocol.swift; sourceTree = "<group>"; };
+		7F904F4E2BB5B71500AFB7E4 /* NetworkSerializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSerializable.swift; sourceTree = "<group>"; };
+		7F904F502BB5C47B00AFB7E4 /* NetworkDeserializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDeserializable.swift; sourceTree = "<group>"; };
 		7F904F522BB5C79600AFB7E4 /* RequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBody.swift; sourceTree = "<group>"; };
 		7F904F552BB5CFD500AFB7E4 /* MessageMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageMapper.swift; sourceTree = "<group>"; };
 		7FBE6CDE2BB50CEE00485377 /* AIChatbot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIChatbot.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +56,31 @@
 				7F904F552BB5CFD500AFB7E4 /* MessageMapper.swift */,
 			);
 			path = Mapper;
+			sourceTree = "<group>";
+		};
+		7FABD03D2BBE785B00D1B6E5 /* Serializer */ = {
+			isa = PBXGroup;
+			children = (
+				7FABD03E2BBE7A7200D1B6E5 /* Interface */,
+				7FABD03F2BBE7CAD00D1B6E5 /* Implementation */,
+			);
+			path = Serializer;
+			sourceTree = "<group>";
+		};
+		7FABD03E2BBE7A7200D1B6E5 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				7F904F4E2BB5B71500AFB7E4 /* NetworkSerializable.swift */,
+				7F904F502BB5C47B00AFB7E4 /* NetworkDeserializable.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		7FABD03F2BBE7CAD00D1B6E5 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Implementation;
 			sourceTree = "<group>";
 		};
 		7FBE6CD52BB50CEE00485377 = {
@@ -152,9 +177,8 @@
 		7FBE6D012BB535CA00485377 /* Remote */ = {
 			isa = PBXGroup;
 			children = (
+				7FABD03D2BBE785B00D1B6E5 /* Serializer */,
 				7FBE6D022BB535FF00485377 /* MessageDto.swift */,
-				7F904F4E2BB5B71500AFB7E4 /* JSONDecoable.swift */,
-				7F904F502BB5C47B00AFB7E4 /* JSONEncodProtocol.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -230,7 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FBE6CFE2BB5329300485377 /* ChatRepositoryProtocol.swift in Sources */,
-				7F904F4F2BB5B71500AFB7E4 /* JSONDecoable.swift in Sources */,
+				7F904F4F2BB5B71500AFB7E4 /* NetworkSerializable.swift in Sources */,
 				7FBE6CE62BB50CEE00485377 /* ViewController.swift in Sources */,
 				7FBE6CFB2BB530D300485377 /* Message.swift in Sources */,
 				7FBE6CE22BB50CEE00485377 /* AppDelegate.swift in Sources */,
@@ -238,7 +262,7 @@
 				7F904F562BB5CFD500AFB7E4 /* MessageMapper.swift in Sources */,
 				7FBE6CE42BB50CEE00485377 /* SceneDelegate.swift in Sources */,
 				7FBE6D032BB535FF00485377 /* MessageDto.swift in Sources */,
-				7F904F512BB5C47B00AFB7E4 /* JSONEncodProtocol.swift in Sources */,
+				7F904F512BB5C47B00AFB7E4 /* NetworkDeserializable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
