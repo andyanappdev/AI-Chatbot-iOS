@@ -5,7 +5,7 @@
 //  Created by Doyoung An on 3/29/24.
 //
 
-enum AiModel: Encodable, JSONEncodProtocol {
+enum AiModel: Encodable {
     case gpt3Turbo0125
     case gpt3Turbo
     case gpt3Turbo1106
@@ -22,7 +22,7 @@ enum AiModel: Encodable, JSONEncodProtocol {
     }
 }
 
-struct RequestBody: Encodable, JSONEncodProtocol {
+struct RequestBody: Encodable {
     let model: AiModel
     let messages: [Message]
     let stream: Bool
