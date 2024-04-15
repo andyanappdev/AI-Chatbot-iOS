@@ -8,17 +8,17 @@
 import Foundation
 
 protocol NetworkDeserializable {
-    func deserialize<T: Decodable>(_ data: Data) throws -> T
+    func deserialize<T: Decodable>(JSON data: Data) throws -> T
 }
 
-/* JSONEncoder 사용
-protocol JSONEncodProtocol {
-    func toJson() throws -> Data
+/* JSONDecoder 사용
+protocol JSONDecodProtocol {
+    func fromJson(json: Data) throws -> Self
 }
 
-extension JSONEncodProtocol where Self: Encodable {
-    func toJson() throws -> Data {
-        return try JSONEncoder().encode(self)
+extension JSONDecodProtocol where Self: Decodable {
+    func fromJson(json: Data) throws -> Self {
+        return try JSONDecoder().decode(Self.self, from: json)
     }
 }
 */

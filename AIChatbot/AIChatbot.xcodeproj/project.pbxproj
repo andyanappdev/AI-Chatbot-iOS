@@ -12,6 +12,7 @@
 		7F904F532BB5C79600AFB7E4 /* RequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F904F522BB5C79600AFB7E4 /* RequestBody.swift */; };
 		7F904F562BB5CFD500AFB7E4 /* MessageMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F904F552BB5CFD500AFB7E4 /* MessageMapper.swift */; };
 		7FABD0412BBE848100D1B6E5 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FABD0402BBE848100D1B6E5 /* NetworkResponse.swift */; };
+		7FB927C32BC9119F00D6D3E7 /* JSONNetworkDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB927C22BC9119F00D6D3E7 /* JSONNetworkDeserializer.swift */; };
 		7FBE6CE22BB50CEE00485377 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE6CE12BB50CEE00485377 /* AppDelegate.swift */; };
 		7FBE6CE42BB50CEE00485377 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE6CE32BB50CEE00485377 /* SceneDelegate.swift */; };
 		7FBE6CE62BB50CEE00485377 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE6CE52BB50CEE00485377 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 		7FBE6CFB2BB530D300485377 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE6CFA2BB530D300485377 /* Message.swift */; };
 		7FBE6CFE2BB5329300485377 /* ChatRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE6CFD2BB5329300485377 /* ChatRepositoryProtocol.swift */; };
 		7FBE6D032BB535FF00485377 /* MessageDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE6D022BB535FF00485377 /* MessageDto.swift */; };
+		7FF60E282BC7CD2A008B617B /* JSONNetworkSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF60E272BC7CD2A008B617B /* JSONNetworkSerializer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,7 @@
 		7F904F522BB5C79600AFB7E4 /* RequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBody.swift; sourceTree = "<group>"; };
 		7F904F552BB5CFD500AFB7E4 /* MessageMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageMapper.swift; sourceTree = "<group>"; };
 		7FABD0402BBE848100D1B6E5 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		7FB927C22BC9119F00D6D3E7 /* JSONNetworkDeserializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONNetworkDeserializer.swift; sourceTree = "<group>"; };
 		7FBE6CDE2BB50CEE00485377 /* AIChatbot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIChatbot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FBE6CE12BB50CEE00485377 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FBE6CE32BB50CEE00485377 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +42,7 @@
 		7FBE6CFA2BB530D300485377 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		7FBE6CFD2BB5329300485377 /* ChatRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRepositoryProtocol.swift; sourceTree = "<group>"; };
 		7FBE6D022BB535FF00485377 /* MessageDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDto.swift; sourceTree = "<group>"; };
+		7FF60E272BC7CD2A008B617B /* JSONNetworkSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONNetworkSerializer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 		7FABD03F2BBE7CAD00D1B6E5 /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
+				7FF60E272BC7CD2A008B617B /* JSONNetworkSerializer.swift */,
+				7FB927C22BC9119F00D6D3E7 /* JSONNetworkDeserializer.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -263,7 +269,9 @@
 				7FBE6CE22BB50CEE00485377 /* AppDelegate.swift in Sources */,
 				7F904F532BB5C79600AFB7E4 /* RequestBody.swift in Sources */,
 				7F904F562BB5CFD500AFB7E4 /* MessageMapper.swift in Sources */,
+				7FB927C32BC9119F00D6D3E7 /* JSONNetworkDeserializer.swift in Sources */,
 				7FBE6CE42BB50CEE00485377 /* SceneDelegate.swift in Sources */,
+				7FF60E282BC7CD2A008B617B /* JSONNetworkSerializer.swift in Sources */,
 				7FABD0412BBE848100D1B6E5 /* NetworkResponse.swift in Sources */,
 				7FBE6D032BB535FF00485377 /* MessageDto.swift in Sources */,
 				7F904F512BB5C47B00AFB7E4 /* NetworkDeserializable.swift in Sources */,
